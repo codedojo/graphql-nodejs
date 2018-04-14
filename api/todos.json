@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "title": "Оформить подписку",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "title": "Познакомиться с GraphQL",
+        "completed": true,
+        "steps": [
+            { 
+                "title": "Запросы",
+                "completed": true
+            },
+            { "title":
+                "Вложенные поля",
+                "completed": true
+            },
+            {
+                "title": "Аргументы",
+                "completed": true
+            },
+            {
+                "title": "Типы",
+                "completed": true
+            },
+            {
+                "title": "Алиасы",
+                "completed": true
+            },
+            {
+                "title": "Фрагменты",
+                "completed": true
+            },
+            {
+                "title": "Переменные",
+                "completed": true
+            },
+            {
+                "title": "Директивы",
+                "completed": true
+            },
+            {
+                "title": "Изменения",
+                "completed": true
+            },
+            {
+                "title": "Интроспекция",
+                "completed": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Создать GraphQL-сервер",
+        "completed": false,
+        "steps": [
+            { 
+                "title":"Создать Express-сервер",
+                "completed": false
+            },
+            { 
+                "title":"Добавить маршрут для примема GraphQL-запросов",
+                "completed": false
+            },
+            { 
+                "title":"Создать GraphQL-схему",
+                "completed": false
+            },
+            { 
+                "title":"Написать resolve-функции",
+                "completed": false
+            }
+        ]
+    }
+]

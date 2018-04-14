@@ -1,0 +1,38 @@
+type Step {
+    title: String!
+    completed: Boolean!
+}
+
+type Todo {
+    id: ID!
+    title: String!
+    completed: Boolean!
+    steps: [Step]
+}
+
+enum Status {
+    COMPLETED
+    UNCOMPLETED
+}
+
+input StepInput {
+    title: String!
+    completed: Boolean = false
+}
+
+input TodoInput {
+    title: String!
+    completed: Boolean = false
+    steps: [StepInput]
+}
+
+type Query {
+    todo(id: ID!): Todo!
+    todos(status: Status): [Todo]
+}
+
+type Mutation {
+    createTodo(input: TodoInput!): Todo
+    updateTodo(id: ID!, input: TodoInput!): Todo
+    deleteTodo(id: ID!): ID
+}
